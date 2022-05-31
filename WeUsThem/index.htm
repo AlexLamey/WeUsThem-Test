@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AddressBook</title>
+	<link rel="stylesheet" href="styles/WeUsThem.css">
+	<script src="scripts/WeUsThem.js"></script>
+</head>
+<body>
+	<br class="container">
+		<div class="title">
+			<h1>Address Book</h1>
+			<!-- //TODO: implement search tool to filter desired names-->
+			<label for="search">Search</label><input type="text" required id="search" class="formFields"  >
+            <button id="search">Search</button>
+		</div>
+		<div class="quickadd"><button id="QuickAdd">+ Add</button></div>
+             <!-- <button id="search">+ Search</button></div> -->
+        
+        <!-- <div class = 'searchForm'>
+            <label for="search">Search</label><input type="text" required id="search" class="formFields"  >
+            <br></br>
+            <button id="search">Search</button><button id="Cancel">Cancel</button>
+        </div> -->
+        
+
+		<div class="quickaddForm">
+            <label for="picture">Picture</label><input type="file" id="image_input" class = formFields accept = "image/jpg, image/jpg"> <br>
+            <label for="firstname">First Name <span class = req>*</span></label><input type="text" required id="firstname" class="formFields"  > <br>
+            <label for="lastname">Last name <span class = req>*</span></label><input type="text" id="lastname" class="formFields"  > <br>
+			<label for="phone">Phone <span class = req>*</span></label><input type="text" required id="phone" 
+			class="formFields" title="xxx-yyy-zzzz, (xxx)yyy-zzzz or just yyy-zzzz" pattern="((\d{3}-)?\d{3}-\d{4})|\(\d{3}\)\d{3}-\d{4}" > <br>
+			<label for="email">E-Mail <span class = req>*</span></label><input type="text" required id="email" class="formFields" 
+            title="x@y.z, with . or - allowed in x and/or y,&#010;and z must have only 2 or 3 letters"pattern="^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})$"> <br>
+			<br><br>
+			<button id="Add">Add Now</button><button id="Cancel">Cancel</button>
+		</div>
+		<div class="addbook">
+		</div>
+	</div>
+</body>
+</html>
+
